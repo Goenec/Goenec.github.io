@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Магазин товаров для дачи и хозяйства</title>
+  <style>
+    :root {
+      --bg-color: #f5f9fc;
+      --header-color: #2c3e50;
+      --text-color: #333;
+      --price-color: #e74c3c;
+      --card-bg: #ffffff;
+      --font-main: 'Arial', sans-serif;
+      --whatsapp-color: #25D366;
+      --email-color: #e67e22;
+      --header-bg-color: #008080; /* Цвет морской волны */
+    }
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--header-bg-color); /* Применяем цвет морской волны */
+      color: white;
+      padding: 40px 20px 50px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 4.2rem;
+      line-height: 1.2;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    header p {
+      font-size: 2.4rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #e0e0e0;
+      line-height: 1.5;
+    }
+    .contact-info {
+      background: #eaf2f8;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px auto 40px;
+      text-align: center;
+      max-width: 600px;
+    }
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+    .contact-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 50px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    .contact-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .whatsapp-btn, .phone-btn {
+      background-color: var(--whatsapp-color);
+    }
+    .email-btn {
+      background-color: var(--email-color);
+    }
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .category-title {
+      grid-column: 1 / -1;
+      font-size: 24px;
+      margin: 40px 0 20px;
+      color: var(--header-color);
+      border-bottom: 2px solid var(--header-color);
+      padding-bottom: 5px;
+    }
+    .product-card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-image {
+      width: 100%;
+      max-width: 280px;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 5px;
+      background: #f0f0f0;
+      margin-bottom: 15px;
+    }
+    .product-title {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      color: var(--header-color);
+      min-height: 48px;
+    }
+    .product-price {
+      font-weight: bold;
+      color: var(--price-color);
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .product-description {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+      min-height: 60px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Привет! Добро пожаловать в наш магазин!</h1>
+    <p>У нас есть канистры разной ёмкости, всевозможные переносные газо и электроплиты, в разном исполнении. А также садовые опрыскиватели 8 л, и 16 л. Аккумуляторные мойки для автомашин и много всего нужного для дачи и личного хозяйства. Выбирайте товар. Пишите! Звоните!</p>
+  </header>
+
+  <div class="products-container">
+
+    <h3 class="category-title">Канистры</h3>
+
+    <div class="product-card">
+      <img src="1745735081694.jpg" alt="Канистра 40 л" class="product-image" />
+      <h3 class="product-title">Канистра 40 л</h3>
+      <div class="product-price">2450 руб</div>
+      <p class="product-description">Канистра для топлива, 40 литров, металлическая.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="7420873422.webp" alt="Канистра 50 л" class="product-image" />
+      <h3 class="product-title">Канистра 50 л</h3>
+      <div class="product-price">2850 руб</div>
+      <p class="product-description">Канистра для топлива, 50 литров, металлическая.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="1745735081706.jpg" alt="Канистра 60 л" class="product-image" />
+      <h3 class="product-title">Канистра 60 л</h3>
+      <div class="product-price">3100 руб</div>
+      <p class="product-description">Канистра для топлива, 60 литров, металлическая.</p>
+    </div>
+
+    <h3 class="category-title">Плиты</h3>
+
+    <div class="product-card">
+      <img src="IMG-20250407-WA0014.jpg" alt="Газовая плитка Happy Home без переходника" class="product-image" />
+      <h3 class="product-title">Газовая плитка Happy Home без переходника</h3>
+      <div class="product-price">890 руб</div>
+      <p class="product-description">Газовая плитка без переходника, компактная.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="IMG-20250407-WA0017.jpg" alt="Газовая переносная плита с переходником" class="product-image" />
+      <h3 class="product-title">Газовая переносная плита с переходником</h3>
+      <div class="product-price">990 руб</div>
+      <p class="product-description">Газовая плита с переходником для большого газового баллона.</p>
+    </div>
+
+    <h3 class="category-title">Садовые инструменты</h3>
+
+    <div class="product-card">
+      <img src="IMG-20240422-WA0001.jpg" alt="Опрыскиватель садовый ручной 16 л" class="product-image" />
+      <h3 class="product-title">Опрыскиватель садовый ручной 16 л</h3>
+      <div class="product-price">1400 руб</div>
+      <p class="product-description">Ручной опрыскиватель для сада, емкость 16 литров.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="IMG-20240422-WA0002.jpg" alt="Опрыскиватель садовый 8л" class="product-image" />
+      <h3 class="product-title">Опрыскиватель садовый 8л</h3>
+      <div class="product-price">990 руб</div>
+      <p class="product-description">Ручной опрыскиватель для сада, емкость 8 литров.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="IMG-20250407-WA0022.jpg" alt="Крысоловка 12×12×24 см" class="product-image" />
+      <h3 class="product-title">Крысоловка 12×12×24 см</h3>
+      <div class="product-price">350 руб</div>
+      <p class="product-description">Металлическая клетка для отлова грызунов.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="1745733888030.jpg" alt="Серп-коса складная" class="product-image" />
+      <h3 class="product-title">Серп-коса складная</h3>
+      <div class="product-price">250 руб</div>
+      <p class="product-description">Складной механизм, острое лезвие, легкая. Чехол для хранения в комплекте.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="IMG-20250407-WA0023.jpg" alt="Газовый баллончик 220г (Корея)" class="product-image" />
+      <h3 class="product-title">Газовый баллончик 220г (Корея)</h3>
+      <div class="product-price">95 руб</div>
+      <p class="product-description">Газовый баллончик с бутаном, вес 220г, произведен в Корее.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Магазин товаров для дачи и личного хозяйства</p>
+  </footer>
+</body>
+</html>
