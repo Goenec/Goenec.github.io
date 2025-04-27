@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html_content = '''<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -7,30 +7,34 @@
   <style>
     :root {
       --bg-color: #f5f9fc;
-      --header-color: #2c3e50;
-      --text-color: #333;
+      --header-color: #ffffff;
+      --text-color: #ffffff;
       --price-color: #e74c3c;
       --card-bg: #ffffff;
       --font-main: 'Arial', sans-serif;
       --whatsapp-color: #25D366;
       --email-color: #e67e22;
-      --header-bg-color: #008080; /* Цвет морской волны */
+      --header-bg-color: #228B22; /* Зеленый фон */
     }
     body {
       font-family: var(--font-main);
       background-color: var(--bg-color);
-      color: var(--text-color);
+      color: #333333;
       margin: 0;
       padding: 20px;
       line-height: 1.6;
     }
     header {
-      background-color: var(--header-bg-color); /* Применяем цвет морской волны */
-      color: white;
+      background-color: var(--header-bg-color);
+      color: var(--text-color);
       padding: 40px 20px 50px;
       text-align: center;
       border-radius: 8px;
       margin-bottom: 30px;
+    }
+    header h1, header p {
+      color: var(--text-color);
+      margin: 0;
     }
     header h1 {
       font-size: 4.2rem;
@@ -42,7 +46,6 @@
       font-size: 2.4rem;
       max-width: 800px;
       margin: 0 auto;
-      color: #e0e0e0;
       line-height: 1.5;
     }
     .contact-info {
@@ -52,6 +55,7 @@
       margin: 20px auto 40px;
       text-align: center;
       max-width: 600px;
+      color: #333333;
     }
     .contact-buttons {
       display: flex;
@@ -91,8 +95,8 @@
       grid-column: 1 / -1;
       font-size: 24px;
       margin: 40px 0 20px;
-      color: var(--header-color);
-      border-bottom: 2px solid var(--header-color);
+      color: #333333;
+      border-bottom: 2px solid #333333;
       padding-bottom: 5px;
     }
     .product-card {
@@ -121,7 +125,7 @@
     .product-title {
       font-size: 18px;
       margin: 10px 0 5px;
-      color: var(--header-color);
+      color: #333333;
       min-height: 48px;
     }
     .product-price {
@@ -132,7 +136,7 @@
     }
     .product-description {
       font-size: 14px;
-      color: #666;
+      color: #666666;
       margin-bottom: 15px;
       min-height: 60px;
     }
@@ -140,7 +144,7 @@
       text-align: center;
       margin-top: 60px;
       padding: 20px;
-      color: #777;
+      color: #777777;
     }
   </style>
 </head>
@@ -150,12 +154,35 @@
     <p>У нас есть канистры разной ёмкости, всевозможные переносные газо и электроплиты, в разном исполнении. А также садовые опрыскиватели 8 л, и 16 л. Аккумуляторные мойки для автомашин и много всего нужного для дачи и личного хозяйства. Выбирайте товар. Пишите! Звоните!</p>
   </header>
 
+  <div class="contact-info">
+    <h2>Выбирайте товар. Пишите! Звоните!</h2>
+    <div class="contact-buttons">
+      <a href="tel:+79622263505" class="contact-btn phone-btn">Позвонить</a>
+      <a href="https://wa.me/79622263505" class="contact-btn whatsapp-btn" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <a href="mailto:elena-dubrava@mail.ru" class="contact-btn email-btn">Написать на почту</a>
+    </div>
+  </div>
+
   <div class="products-container">
 
     <h3 class="category-title">Канистры</h3>
 
     <div class="product-card">
-      <img src="1745735081694.jpg" alt="Канистра 40 л" class="product-image" />
+      <img src="1745735081719.jpg" alt="Канистра 20 л" class="product-image" />
+      <h3 class="product-title">Канистра 20 л</h3>
+      <div class="product-price">1850 руб</div>
+      <p class="product-description">Канистра для топлива, 20 литров, металлическая, новый образец.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="1743333996835.jpg" alt="Канистра 30 л" class="product-image" />
+      <h3 class="product-title">Канистра 30 л</h3>
+      <div class="product-price">2150 руб</div>
+      <p class="product-description">Канистра для топлива, 30 литров, металлическая.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="1745735081706.jpg" alt="Канистра 40 л" class="product-image" />
       <h3 class="product-title">Канистра 40 л</h3>
       <div class="product-price">2450 руб</div>
       <p class="product-description">Канистра для топлива, 40 литров, металлическая.</p>
@@ -169,7 +196,7 @@
     </div>
 
     <div class="product-card">
-      <img src="1745735081706.jpg" alt="Канистра 60 л" class="product-image" />
+      <img src="1743333996694.jpg" alt="Канистра 60 л" class="product-image" />
       <h3 class="product-title">Канистра 60 л</h3>
       <div class="product-price">3100 руб</div>
       <p class="product-description">Канистра для топлива, 60 литров, металлическая.</p>
@@ -178,34 +205,64 @@
     <h3 class="category-title">Плиты</h3>
 
     <div class="product-card">
-      <img src="IMG-20250407-WA0014.jpg" alt="Газовая плитка Happy Home без переходника" class="product-image" />
+      <img src="IMG-20250407-WA0017.jpg" alt="Газовая плитка Happy Home без переходника" class="product-image" />
       <h3 class="product-title">Газовая плитка Happy Home без переходника</h3>
       <div class="product-price">890 руб</div>
       <p class="product-description">Газовая плитка без переходника, компактная.</p>
     </div>
 
     <div class="product-card">
-      <img src="IMG-20250407-WA0017.jpg" alt="Газовая переносная плита с переходником" class="product-image" />
+      <img src="IMG-20250407-WA0014.jpg" alt="Газовая переносная плита с переходником" class="product-image" />
       <h3 class="product-title">Газовая переносная плита с переходником</h3>
       <div class="product-price">990 руб</div>
       <p class="product-description">Газовая плита с переходником для большого газового баллона.</p>
     </div>
 
-    <h3 class="category-title">Садовые инструменты</h3>
+    <div class="product-card">
+      <img src="IMG-20250407-WA0009.jpg" alt="Инфракрасная стеклокерамическая плита 3500 Вт" class="product-image" />
+      <h3 class="product-title">Инфракрасная стеклокерамическая плита 3500 Вт</h3>
+      <div class="product-price">2850 руб</div>
+      <p class="product-description">Инфракрасная плита, мощность 3500 Вт, стеклокерамическая поверхность.</p>
+    </div>
 
     <div class="product-card">
-      <img src="IMG-20240422-WA0001.jpg" alt="Опрыскиватель садовый ручной 16 л" class="product-image" />
+      <img src="IMG-20250407-WA0010.jpg" alt="Электрическая двухконфорочная плитка" class="product-image" />
+      <h3 class="product-title">Электрическая двухконфорочная плитка</h3>
+      <div class="product-price">1950 руб</div>
+      <p class="product-description">Электрическая плитка с двумя конфорками, удобна для дома и дачи.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="IMG-20250407-WA0018 (1).jpg" alt="Электрическая плитка Мечта (1 конфорка)" class="product-image" />
+      <h3 class="product-title">Электрическая плитка Мечта (1 конфорка)</h3>
+      <div class="product-price">1350 руб</div>
+      <p class="product-description">Электрическая плитка с одной конфоркой, компактная.</p>
+    </div>
+
+    <h3 class="category-title">Опрыскиватели</h3>
+
+    <div class="product-card">
+      <img src="IMG-20240422-WA0002.jpg" alt="Опрыскиватель садовый ручной 16 л" class="product-image" />
       <h3 class="product-title">Опрыскиватель садовый ручной 16 л</h3>
       <div class="product-price">1400 руб</div>
       <p class="product-description">Ручной опрыскиватель для сада, емкость 16 литров.</p>
     </div>
 
     <div class="product-card">
-      <img src="IMG-20240422-WA0002.jpg" alt="Опрыскиватель садовый 8л" class="product-image" />
+      <img src="IMG-20240422-WA0001.jpg" alt="Опрыскиватель садовый 8л" class="product-image" />
       <h3 class="product-title">Опрыскиватель садовый 8л</h3>
       <div class="product-price">990 руб</div>
       <p class="product-description">Ручной опрыскиватель для сада, емкость 8 литров.</p>
     </div>
+
+    <div class="product-card">
+      <img src="1745754747596.jpg" alt="Опрыскиватель аккумуляторный 16 л" class="product-image" />
+      <h3 class="product-title">Опрыскиватель аккумуляторный 16 л</h3>
+      <div class="product-price">3500 руб</div>
+      <p class="product-description">Аккумуляторный опрыскиватель для сада, емкость 16 литров, мощность 12V 8A, расстояние распыления 5 метров, 4 насадки.</p>
+    </div>
+
+    <h3 class="category-title">Крысоловки</h3>
 
     <div class="product-card">
       <img src="IMG-20250407-WA0022.jpg" alt="Крысоловка 12×12×24 см" class="product-image" />
@@ -215,17 +272,26 @@
     </div>
 
     <div class="product-card">
-      <img src="1745733888030.jpg" alt="Серп-коса складная" class="product-image" />
-      <h3 class="product-title">Серп-коса складная</h3>
-      <div class="product-price">250 руб</div>
-      <p class="product-description">Складной механизм, острое лезвие, легкая. Чехол для хранения в комплекте.</p>
+      <img src="IMG-20250407-WA0021.jpg" alt="Крысоловка 14×14×27 см" class="product-image" />
+      <h3 class="product-title">Крысоловка 14×14×27 см</h3>
+      <div class="product-price">450 руб</div>
+      <p class="product-description">Металлическая клетка для отлова грызунов.</p>
     </div>
+
+    <h3 class="category-title">Прочее</h3>
 
     <div class="product-card">
       <img src="IMG-20250407-WA0023.jpg" alt="Газовый баллончик 220г (Корея)" class="product-image" />
       <h3 class="product-title">Газовый баллончик 220г (Корея)</h3>
-      <div class="product-price">95 руб</div>
+      <div class="product-price">90 руб</div>
       <p class="product-description">Газовый баллончик с бутаном, вес 220г, произведен в Корее.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="1745733888030.jpg" alt="Серп-коса складная" class="product-image" />
+      <h3 class="product-title">Серп-коса складная</h3>
+      <div class="product-price">250 руб</div>
+      <p class="product-description">Складной механизм, острое лезвие, легкая. Чехол для хранения в комплекте.</p>
     </div>
 
   </div>
@@ -234,4 +300,7 @@
     <p>© 2025 Магазин товаров для дачи и личного хозяйства</p>
   </footer>
 </body>
-</html>
+</html>'''
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
