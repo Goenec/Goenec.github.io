@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html_content = '''<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -12,9 +12,8 @@
       --price-color: #e74c3c;
       --card-bg: #ffffff;
       --font-main: 'Arial', sans-serif;
-      --whatsapp-phone-color: #25D366; /* зеленый для WhatsApp и звонка */
+      --whatsapp-color: #25D366;
       --email-color: #e67e22;
-      --call-button-bg: #2c3e50; /* синий фон для приветственного сообщения */
     }
     body {
       font-family: var(--font-main);
@@ -25,7 +24,7 @@
       line-height: 1.6;
     }
     header {
-      background-color: var(--call-button-bg);
+      background-color: var(--whatsapp-color);
       color: white;
       padding: 40px 20px 50px;
       text-align: center;
@@ -33,13 +32,13 @@
       margin-bottom: 30px;
     }
     header h1 {
-      font-size: 4.2rem; /* увеличен на 50% от 2.8rem */
+      font-size: 4.2rem;
       line-height: 1.2;
       font-weight: bold;
       margin-bottom: 15px;
     }
     header p {
-      font-size: 2.4rem; /* увеличен в 2 раза от 1.2rem */
+      font-size: 2.4rem;
       max-width: 800px;
       margin: 0 auto;
       color: #e0e0e0;
@@ -74,7 +73,7 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .whatsapp-btn, .phone-btn {
-      background-color: var(--whatsapp-phone-color);
+      background-color: var(--whatsapp-color);
     }
     .email-btn {
       background-color: var(--email-color);
@@ -155,7 +154,7 @@
     <div class="contact-buttons">
       <a href="tel:+79622263505" class="contact-btn phone-btn">Позвонить</a>
       <a href="https://wa.me/79622263505" class="contact-btn whatsapp-btn" target="_blank" rel="noopener">Написать в WhatsApp</a>
-      <a href="/cdn-cgi/l/email-protection#ef8a838a818ec28b9a8d9d8e998eaf828e8683c19d9a" class="contact-btn email-btn">Написать на почту</a>
+      <a href="mailto:elena-dubrava@mail.ru" class="contact-btn email-btn">Написать на почту</a>
     </div>
   </div>
 
@@ -185,6 +184,13 @@
     </div>
 
     <div class="product-card">
+      <img src="1745735081706.jpg" alt="Канистра 60 л" class="product-image" />
+      <h3 class="product-title">Канистра 60 л</h3>
+      <div class="product-price">3100 руб</div>
+      <p class="product-description">Канистра для топлива, 60 литров, металлическая.</p>
+    </div>
+
+    <div class="product-card">
       <img src="1745735081694.jpg" alt="Канистра 40 л" class="product-image" />
       <h3 class="product-title">Канистра 40 л</h3>
       <div class="product-price">2450 руб</div>
@@ -196,13 +202,6 @@
       <h3 class="product-title">Канистра 50 л</h3>
       <div class="product-price">2850 руб</div>
       <p class="product-description">Канистра для топлива, 50 литров, металлическая.</p>
-    </div>
-
-    <div class="product-card">
-      <img src="1745735081706.jpg" alt="Канистра 60 л" class="product-image" />
-      <h3 class="product-title">Канистра 60 л</h3>
-      <div class="product-price">3100 руб</div>
-      <p class="product-description">Канистра для топлива, 60 литров, металлическая.</p>
     </div>
 
     <h3 class="category-title">Плиты</h3>
@@ -266,10 +265,10 @@
     </div>
 
     <div class="product-card">
-      <img src="IMG-20250407-WA0021.jpg" alt="Крысоловка 14x14x27 см" class="product-image" />
-      <h3 class="product-title">Крысоловка 14x14x27 см</h3>
-      <div class="product-price">450 руб</div>
-      <p class="product-description">Более крупная металлическая клетка для отлова грызунов.</p>
+      <img src="IMG-20250407-WA0021.jpg" alt="Крысоловка 12/12/24 см" class="product-image" />
+      <h3 class="product-title">Крысоловка 12/12/24 см</h3>
+      <div class="product-price">350 руб</div>
+      <p class="product-description">Металлическая клетка для отлова грызунов.</p>
     </div>
 
     <div class="product-card">
@@ -298,5 +297,8 @@
   <footer>
     <p>© 2025 Магазин товаров для дачи и личного хозяйства</p>
   </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
-</html>
+</body>
+</html>'''
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
