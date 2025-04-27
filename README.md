@@ -1,25 +1,25 @@
-# Home and garden goods store
+# Магазин товаров для дачи и хозяйства
 
-This is a simple site with a product catalog: canisters, stoves, garden sprayers and other useful things for home and garden.
+Это простой сайт с каталогом товаров: канистры, плиты, садовые опрыскиватели и другие полезные вещи для дома и дачи.
 
-The site is hosted on GitHub Pages and is available at:
+Сайт размещён на GitHub Pages и доступен по адресу:  
 https://Goenek.github.io
 
-## Description
+## Описание
 
-This project presents a one-page site with a product catalog, including photos, descriptions and prices. There is also contact information for communication.
+В этом проекте представлен одностраничный сайт с каталогом товаров, включая фотографии, описания и цены. Также есть контактная информация для связи.
 
-## How to use
+## Как использовать
 
-- Open the site using the link above to view the products.
-- For communication, use the phone, WhatsApp or email indicated on the site.
+- Откройте сайт по ссылке выше, чтобы просмотреть товары.
+- Для связи используйте телефон, WhatsApp или email, указанные на сайте.
 
-## How to update the site
+## Как обновить сайт
 
-1. Edit the files locally (for example, `index.html` and images).
-2. Upload the updated files to the GitHub repository.
-3. The changes will automatically appear on the site in a few minutes.
+1. Отредактируйте файлы локально (например, `index.html` и изображения).
+2. Загрузите обновлённые файлы в репозиторий GitHub.
+3. Изменения автоматически появятся на сайте через несколько минут.
 
 ---
 
-Thank you for visiting!
+Спасибо за посещение!
